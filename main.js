@@ -5,6 +5,9 @@ app.whenReady().then(() => {
   mainWindow = window.createBrowserWindow(app);
   mainWindow.maximize();
   mainWindow.loadURL("http://localhost:3000");
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  })
 });
 
 app.on("window-all-closed", () => {
