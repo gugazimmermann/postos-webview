@@ -12,7 +12,7 @@ exports.createBrowserWindow = () => {
     icon: path.join(__dirname, "assets/icons/png/64x64.png"),
     webPreferences: {
       nativeWindowOpen: true,
-      devTools: true,
+      devTools: false,
       contextIsolation: true,
       webviewTag: true,
     },
